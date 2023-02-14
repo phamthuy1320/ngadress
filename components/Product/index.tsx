@@ -2,6 +2,7 @@ import {IProduct} from "./types";
 import {Box, Text, Image, Flex} from "@chakra-ui/react";
 import Link from "next/link";
 import {useCallback} from "react";
+import {TextPrice} from "../TextPrice";
 
 export const Product = (props: IProduct) => {
   const {sale, src, id, name, price, orgPrice} = props;
@@ -29,8 +30,8 @@ export const Product = (props: IProduct) => {
         <Text>{name}</Text>
       </Link>
       <Flex flexWrap={"wrap"} gap={10}>
-        <Text color={"red"} _after={{content: `"đ"`, fontSize: 10, textDecoration:"underline"}}>{price}</Text>
-        <Text textDecoration={"line-through"} _after={{content: `"đ"`, fontSize: 10, textDecoration: "line-through"}}>{orgPrice}</Text>
+        <TextPrice color={"red"} price={price}/>
+        <TextPrice textDecoration={"line-through"} price={orgPrice}/>
       </Flex>
     </Box>
   )

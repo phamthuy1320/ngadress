@@ -3,11 +3,14 @@ import { ApolloProvider } from '@apollo/client';
 import client from "../lib/graphql";
 
 import 'tailwindcss/tailwind.css'
+import {ChakraProvider} from "@chakra-ui/provider";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ApolloProvider client={client}>
-      <Component {...pageProps} />
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </ApolloProvider>
   )
 }

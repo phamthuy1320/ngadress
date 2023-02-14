@@ -14,6 +14,7 @@ export const Category = (props: ICategoryProps) => {
           display={"flex"}
           flexDirection={"column"}
           alignItems={"center"}
+          marginBottom={"20px"}
           _after={{
             content: `""`,
             width: "95%",
@@ -23,7 +24,7 @@ export const Category = (props: ICategoryProps) => {
         >{title.toUpperCase()}</Text>
       </Flex>
      <Grid templateColumns={"repeat(5, minmax(200px, 1fr))"} width={"100%"} gridGap={"20px"}>
-       {Array(15).fill("").map(
+       {Array(5).fill("").map(
          (pro, index) => (
            <GridItem  key={index}>
              <Product name={"Ao dai"} src={"https://product.hstatic.net/1000277297/product/2ad30029934__2__ec89ff392dfe4377b69b86033004dcdd_grande.jpg"} price={10}/>
