@@ -32,8 +32,8 @@ export const Cart = (props: ICartProps) => {
     return <>
       <Box maxHeight={"315px"} overflow={"auto"}>
         {data.map((item, key) => (
-          <>
-          <Flex key={key} >
+          <div key={key}>
+          <Flex>
             <Box backgroundColor={"lightpink"} width={"70px"} marginRight={"20px"}>
               <Image src={item?.src} alt={"-"} />
             </Box>
@@ -51,7 +51,7 @@ export const Cart = (props: ICartProps) => {
             </Button>
           </Flex>
           <Flex height={"1px"} borderBottom={"1px dashed #000"} width={"100%"} margin={"5px 0"} _last={{border: 0}}/>
-          </>
+          </div>
         ))}
       </Box>
       <Flex fontWeight={400} padding={"10px 0"}>TẠM TÍNH: <TextPrice price={total} fontWeight={600}/></Flex>
