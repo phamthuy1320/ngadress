@@ -1,4 +1,3 @@
-import React from "react";
 import { Text, TextProps } from "@chakra-ui/react";
 import numeral from "numeral";
 
@@ -11,12 +10,7 @@ export const TextPrice = (props: ITextPrice) => {
   return (
     <Text
       as={"span"}
-      _after={{
-        content: "\"đ\"",
-        fontSize: 10,
-        textDecoration: "underline",
-        marginTop: "5px",
-      }}
+      _after={{ content: `"đ"`, fontSize: 10, textDecoration: "underline", marginTop: "5px" }}
       display={"flex"}
       {...rest}
     >

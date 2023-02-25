@@ -1,0 +1,16 @@
+{
+  "extends": ["next", "next/core-web-vitals"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-restricted-globals" : "warn",
+    "react/jsx-no-target-blank" : "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts?(x)", "**/index.tsx"],
+      "rules": { "prettier/prettier": ["warn"] }
+    }
+  ],
+  "ignorePatterns": ["node_modules", ".next", ".idea"]
+}

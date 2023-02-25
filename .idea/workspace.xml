@@ -1,7 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="daef1aa1-1855-4b6c-bd64-ba20e6a9bb53" name="Changes" comment="" />
+    <list default="true" id="8323a466-1756-4754-aeb0-515ac1f95a48" name="Changes" comment="Update folder structure">
+      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/categories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/products.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/collections/[collection]/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/collections/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/products/[id]/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/products/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/ao-dai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cart/hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Category/hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Category/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Layout/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Loading/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Menu/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Product/hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Search/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconCart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconClose.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/IconSearch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/CartContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useFetch.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mocks/categories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mocks/products.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/ProductRepository/converts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/ProductRepository/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/ProductRepository/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/CollectionDetail/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/Home/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/ProductDetail/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codegen.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Cart/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Cart/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Category/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Category/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Product/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Product/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductCollection.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Search/hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/hooks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Search/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TextPrice/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextPrice/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/config.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/icons/IconCart.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/icons/IconClose.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/icons/IconFacebook.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/icons/IconMenu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/icons/IconSearch.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/icons/IconZalo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/icons/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated/graphql.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql.schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/graphql.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/hello.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/hello.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/fb-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/zalo-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,18 +107,84 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2LdxuAsFsXBMDNT2whSFDTibMLC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="F:\docs\ngashop_\node_modules\typescript\lib" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\docs\ngashop\out" />
+      <recent name="F:\midori.learn\ngashop" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8323a466-1756-4754-aeb0-515ac1f95a48" name="Changes" comment="" />
+      <created>1676214984767</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676214984767</updated>
+      <workItem from="1676214987251" duration="3991000" />
+      <workItem from="1676298334913" duration="7793000" />
+      <workItem from="1676388702351" duration="13440000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update header">
+      <created>1676399258108</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676399258108</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -34,5 +197,14 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update header" />
+    <MESSAGE value="Update folder structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update folder structure" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

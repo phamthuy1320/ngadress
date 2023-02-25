@@ -1,0 +1,59 @@
+[{
+  "id": "ao-dai",
+  "name": "ao-dai",
+  "price": 1000000,
+  "sale": 10,
+  "src": "/assets/images/ao-dai.png",
+  "category": "ao-dai-tay"
+},{
+  "id": "ao-dai-1",
+  "name": "ao-dai-1",
+  "price": 1000000,
+  "sale": 10,
+  "src": "/assets/images/ao-dai.png",
+  "category": "ao-dai-tay"
+},{
+  "id": "ao-dai-2",
+  "name": "ao-dai-2",
+  "price": 1000000,
+  "sale": 10,
+  "src": "/assets/images/ao-dai.png",
+  "category": "ao-dai-tay"
+},{
+  "id": "ao-dai-3",
+  "name": "ao-dai-3",
+  "price": 1000000,
+  "sale": 10,
+  "src": "/assets/images/ao-dai.png",
+  "category": "ao-dai-tay"
+},
+  {
+    "id": "ao-dai-4",
+    "name": "ao-dai-4",
+    "price": 1000000,
+    "sale": 10,
+    "src": "/assets/images/ao-dai.png",
+    "category": "ao-dai-1"
+  },{
+  "id": "ao-dai-5",
+  "name": "ao-dai-5",
+  "price": 1000000,
+  "sale": 10,
+  "src": "/assets/images/ao-dai.png",
+  "category": "ao-dai-1"
+},{
+  "id": "ao-dai",
+  "name": "ao-dai",
+  "price": 1000000,
+  "sale": 10,
+  "src": "/assets/images/ao-dai.png",
+  "category": "ao-dai-1"
+},{
+  "id": "ao-dai",
+  "name": "ao-dai",
+  "price": 1000000,
+  "sale": 10,
+  "src": "/assets/images/ao-dai.png",
+  "category": "ao-dai-1"
+}
+]

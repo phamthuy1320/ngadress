@@ -1,27 +1,15 @@
-import React from "react";
 import { IProduct } from "./types";
-import { Box, Text, Image, Flex, Link } from "@chakra-ui/react";
-import { useCallback } from "react";
+import { Box, Text, Image, Flex } from "@chakra-ui/react";
+import Link from "next/link";
 import { TextPrice } from "../TextPrice";
+import { useProduct } from "./hooks";
 
-export const Product = (props: IProduct) => {
-  const { sale, src, id, name, price, orgPrice } = props;
-
-  const convertName = useCallback((name: string) => {
-    // Remove accents
-    const newName = name
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/đ/g, "d")
-      .replace(/Đ/g, "D");
-    const regex = new RegExp(" ");
-    return newName.replace(regex, "-");
-  }, []);
+const ProductComponent = (props: ReturnType<typeof useProduct>) => {
+  const { sale, src, name, price, salePrice, url, alt, onAdd } = props;
 
   return (
     <Box>
-      <Link href={`#${id}`}>
+      <Link href={url}>
         <Flex
           position={"relative"}
           backgroundColor={"lightpink"}
@@ -46,20 +34,20 @@ export const Product = (props: IProduct) => {
             </Text>
           )}
           <Box w={"100%"} style={{ contain: "content" }}>
-            <Image
-              src={src}
-              w={"100%"}
-              _hover={{ transform: "scale(1.05)", width: "100%" }}
-              alt={convertName(name)}
-            />
+            <Image src={src} w={"100%"} _hover={{ transform: "scale(1.05)", width: "100%" }} alt={alt} />
           </Box>
         </Flex>
         <Text>{name}</Text>
       </Link>
       <Flex flexWrap={"wrap"} gap={10}>
-        <TextPrice color={"red"} price={price} />
-        <TextPrice textDecoration={"line-through"} price={orgPrice} />
+        <TextPrice color={"red"} price={salePrice} />
+        {price > salePrice && <TextPrice textDecoration={"line-through"} price={price} />}
+        <p onClick={onAdd}>cho vao gio</p>
       </Flex>
     </Box>
   );
+};
+
+export const Product = (props: IProduct) => {
+  return <ProductComponent {...useProduct(props)} />;
 };

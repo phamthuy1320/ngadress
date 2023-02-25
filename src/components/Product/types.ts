@@ -7,6 +7,5 @@ export interface IProduct {
   sale?: number;
   name: string;
   price: number;
-  orgPrice?: number;
   sizes?: TSize[];
 }

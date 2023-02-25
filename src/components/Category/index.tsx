@@ -1,12 +1,17 @@
-import React from "react";
-import { Box, Flex, Grid, GridItem, HStack, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
 import { ICategoryProps } from "./types";
 import { Product } from "../Product";
+import React from "react";
+import { useCategory } from "./hooks";
+import Link from "next/link";
 
-export const Category = (props: ICategoryProps) => {
-  const { title, list } = props;
+const CategoryComponent = (props: ReturnType<typeof useCategory>) => {
+  const { title, data, showMore, id } = props;
+
+  if (!data?.length) return <></>;
+
   return (
-    <Box padding={"10"} width={"full"}>
+    <Box padding={"10"}>
       <Flex justifyContent={"center"}>
         <Text
           width={"fit-content"}
@@ -16,7 +21,7 @@ export const Category = (props: ICategoryProps) => {
           alignItems={"center"}
           marginBottom={"20px"}
           _after={{
-            content: "\"\"",
+            content: `""`,
             width: "95%",
             borderBottom: "3px solid #000",
             margin: "auto",
@@ -26,24 +31,26 @@ export const Category = (props: ICategoryProps) => {
         </Text>
       </Flex>
       <Grid
-        templateColumns={"repeat(5, minmax(200px, 1fr))"}
-        width={"100%"}
+        templateColumns={{ base: "repeat(3, minmax(auto, 1fr))", md: "repeat(5, minmax(auto, 1fr))" }}
         gridGap={"20px"}
       >
-        {Array(5)
-          .fill("")
-          .map((pro, index) => (
-            <GridItem key={index}>
-              <Product
-                name={"Ao dai"}
-                src={
-                  "https://product.hstatic.net/1000277297/product/2ad30029934__2__ec89ff392dfe4377b69b86033004dcdd_grande.jpg"
-                }
-                price={10}
-              />
-            </GridItem>
-          ))}
+        {data.map((pro, index) => (
+          <GridItem key={index}>
+            <Product {...pro} />
+          </GridItem>
+        ))}
       </Grid>
+      {showMore && (
+        <Link href={`/collections/${id}`}>
+          <Text textAlign={"center"} _hover={{ textDecoration: "underline" }}>
+            Xem thêm sản phẩm ...
+          </Text>
+        </Link>
+      )}
     </Box>
   );
+};
+
+export const Category = (props: ICategoryProps) => {
+  return <CategoryComponent {...useCategory(props)} />;
 };

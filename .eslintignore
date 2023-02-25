@@ -1,5 +1,7 @@
-*.test.js
+.next
 
-/node_modules
+.idea
 
-/public
+node_modules
+
+**/*.d.ts
