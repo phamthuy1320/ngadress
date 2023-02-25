@@ -1,0 +1,7 @@
+.next
+
+.idea
+
+node_modules
+
+**/*.d.ts

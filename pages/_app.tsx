@@ -1,18 +1,16 @@
-import type { AppProps } from 'next/app'
-import { ApolloProvider } from '@apollo/client';
-import client from "../lib/graphql";
-
-import 'tailwindcss/tailwind.css'
-import {ChakraProvider} from "@chakra-ui/provider";
+import type { AppProps } from "next/app";
+import { ChakraProvider } from "@chakra-ui/provider";
+import { CartContextProvider } from "../src/contexts/CartContext";
+import theme from "../src/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ApolloProvider client={client}>
-      <ChakraProvider>
+    <ChakraProvider theme={theme}>
+      <CartContextProvider>
         <Component {...pageProps} />
-      </ChakraProvider>
-    </ApolloProvider>
-  )
+      </CartContextProvider>
+    </ChakraProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
