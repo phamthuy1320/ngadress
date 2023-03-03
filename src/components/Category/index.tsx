@@ -9,7 +9,7 @@ const CategoryComponent = (props: ReturnType<typeof useCategory>) => {
   const { title, data, showMore, id } = props;
 
   if (!data?.length) return <></>;
-
+  // Just test
   return (
     <Box padding={"10"}>
       <Flex justifyContent={"center"}>
